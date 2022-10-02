@@ -7,7 +7,7 @@ template<
         class Compare = std::less<typename Container::value_type>
 > class priority_queue {
 private:
-    std::vector<T> _container;
+    Container _container;
     Compare _compare;
 
     void siftUp(int index) {
